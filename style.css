@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	min-height: 100%;
+	background-color: #edeeff;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	/* animation: gradient 15s ease infinite; */
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+	--primary: #1a1a1d;
+	--secondary: #950740;
+	--trio: #757687;
+	--title: #950740;
+	--subtitle: #6f2232;
+	--avatar: #757687;
+
+	/* #6f2232 #950740 #c3073f */
+}
+
+.gametitle h1 {
+	font-size: 3.5vw;
+	text-align: center;
+	font-weight: 400;
+	line-height: 100%;
+	padding: 16px;
+	color: var(--title);
+	text-shadow: 2px 2px var(--primary);
+}
+
+.gamescreen {
+	display: none;
+}
+
+.startscreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.leftclm-start {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+}
+
+.actiontitle p {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	font-size: 2.5vw;
+	text-align: center;
+	color: var(--title);
+	text-shadow: 2px 2px var(--primary);
+}
+
+.middleclm-start {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	height: 100vh;
+	gap: 2vw;
+}
+
+.optionone {
+	height: 35%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: 0 15px 30px 1px #171718;
+	transition: 0.4s;
+}
+
+.optionone:hover,
+.optiontwo:hover,
+.roundselector:hover,
+.startbtn:hover {
+	transform: scale(1.03);
+}
+
+.optionone-leftclm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+}
+
+.player {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	line-height: 80%;
+}
+
+.playerchoice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	font-size: 2vw;
+	padding: 16px;
+	color: var(--avatar);
+	cursor: pointer;
+}
+
+.avatar {
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--avatar);
+}
+
+.playername p {
+	text-align: center;
+	font-size: 1.2vw;
+	line-height: 100%;
+	color: var(--trio);
+}
+
+.optionone-middleclm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+}
+
+.vs {
+	font-size: 4.5vw;
+	line-height: 100%;
+	padding: 16px;
+	color: var(--secondary);
+	text-shadow: 2px 2px var(--avatar);
+}
+
+.optionone-rightclm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 100%;
+}
+
+.computerchoice {
+	font-size: 2vw;
+	text-align: center;
+	flex-direction: row;
+	display: flex;
+	gap: 8px;
+	padding: 24px;
+	color: var(--avatar);
+	cursor: pointer;
+}
+
+.xchoice,
+.ochoice {
+	cursor: pointer;
+}
+.xchoice:hover,
+.ochoice:hover,
+.easy:hover,
+.medium:hover,
+.hard:hover,
+.oneround:hover,
+.fiverounds:hover,
+.tenrounds:hover {
+	color: var(--subtitle);
+}
+
+.optiontwo {
+	height: 35%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: 0 15px 30px 1px #171718;
+	transition: 0.4s;
+}
+
+.optiontwo-leftclm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.playeronechoice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	font-size: 2vw;
+	padding: 16px;
+	color: var(--avatar);
+}
+
+.playertwochoice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	font-size: 2vw;
+	padding: 16px;
+	color: var(--avatar);
+}
+
+.rightclm-start {
+	width: 25%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+}
+
+.startbtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+	color: var(--secondary);
+	text-shadow: 2px 2px var(--avatar);
+	width: 260px;
+	border-radius: 15px;
+	box-shadow: 0 15px 30px 1px #171718;
+	font-size: 1.5vw;
+	padding: 16px;
+	transition: 0.4s;
+}
+
+.playbtn {
+	cursor: pointer;
+}
+
+.roundselector,
+.diffselector {
+	width: 260px;
+	background-color: var(--primary);
+	border-radius: 15px;
+	padding: 16px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	font-size: 2vw;
+	box-shadow: 0 15px 30px 1px #171718;
+	color: var(--trio);
+	transition: 0.4s;
+}
+
+.oneround,
+.fiverounds,
+.tenrounds {
+	cursor: pointer;
+}
+
+.rounds,
+.difficulty {
+	font-size: 2vw;
+	color: var(--title);
+	text-shadow: 2px 2px var(--avatar);
+}
+
+.selected {
+	border: 10px solid var(--secondary);
+}
