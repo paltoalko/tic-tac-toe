@@ -14,7 +14,7 @@ html {
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	/* animation: gradient 15s ease infinite; */
+	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
 
@@ -41,30 +41,205 @@ body {
 	/* #6f2232 #950740 #c3073f */
 }
 
-.gametitle h1 {
-	font-size: 3.5vw;
-	text-align: center;
-	font-weight: 400;
-	line-height: 100%;
-	padding: 16px;
-	color: var(--title);
-	text-shadow: 2px 2px var(--primary);
+.gamescreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	max-height: 100vh;
 }
 
-.gamescreen {
-	display: none;
+.middle-gamescreen {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.maingamescreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--primary);
+	padding: 16px 16px 16px 32px;
+	border-radius: 15px;
+	box-shadow: 0 15px 30px 1px #171718;
+}
+
+.top-gamescreen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+	display: grid;
+	grid-gap: 4px;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: var(--avatar);
+}
+
+.board > div {
+	width: 165px;
+	height: 165px;
+	cursor: pointer;
+	background: var(--primary);
+	justify-content: center;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.statsclm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 16px 16px 32px;
+}
+
+.roundcounter,
+.option {
+	font-size: 1.8rem;
+	text-align: center;
+	color: var(--title);
+	text-shadow: 2px 2px var(--avatar);
+}
+
+.scoretab {
+	position: relative;
+	width: 200px;
+	padding: 0 16px 0 16px;
+	font-size: 1.25rem;
+}
+
+.playerscore {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	width: 100px;
+	text-align: right;
+	color: var(--title);
+}
+.computerscore {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	width: 100px;
+	text-align: right;
+	color: var(--title);
+}
+
+.playerone,
+.playertwo {
+	padding-top: 16px;
+	color: var(--trio);
+	font-size: 1rem;
+}
+
+.currentplayers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.smallvs {
+	font-size: 1.5rem;
+	color: var(--secondary);
+	text-shadow: 2px 2px var(--avatar);
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 16px;
+}
+
+.restart,
+.newgame {
+	color: var(--trio);
+	padding: 8px;
+	font-size: 1.5rem;
+}
+
+.option {
+	padding: 8px;
 }
 
 .startscreen {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	margin: 0;
+	flex-direction: column;
+	width: 100vw;
+	max-height: 100vh;
+}
+
+.bottom-gamescreen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary);
+}
+
+.gamediff {
+	font-size: 1.8rem;
+	color: var(--title);
+	text-shadow: 2px 2px var(--avatar);
+}
+
+.gamemodes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding: 16px;
+	font-size: 1.5rem;
+	width: 100px;
+}
+
+.easymode,
+.mediummode,
+.hardmode {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: var(--trio);
+	transition: 0.4s;
+}
+
+.top-screen {
+	display: flex;
+	justify-content: center;
+}
+
+.top-screen h1 {
+	display: flex;
+	font-size: 6.2vw;
+	text-align: center;
+	font-weight: 400;
+	padding: 16px;
+	color: var(--title);
+	text-shadow: 2px 2px var(--primary);
+}
+
+.bottom-startscreen {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	gap: 3vw;
 }
 
 .leftclm-start {
-	width: 25%;
 	display: flex;
 	justify-content: center;
 }
@@ -82,13 +257,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 50%;
-	height: 100vh;
+	justify-content: center;
 	gap: 2vw;
 }
 
 .optionone {
-	height: 35%;
+	height: 33vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -103,8 +277,10 @@ body {
 .optionone:hover,
 .optiontwo:hover,
 .roundselector:hover,
-.startbtn:hover {
+.startbtn:hover,
+.diffselector:hover {
 	transform: scale(1.03);
+	box-shadow: 0 15px 30px 1px #4e0527;
 }
 
 .optionone-leftclm {
@@ -193,12 +369,18 @@ body {
 .hard:hover,
 .oneround:hover,
 .fiverounds:hover,
-.tenrounds:hover {
+.tenrounds:hover,
+.easymode:hover,
+.mediummode:hover,
+.hardmode:hover,
+.restart:hover,
+.newgame:hover {
 	color: var(--subtitle);
+	cursor: pointer;
 }
 
 .optiontwo {
-	height: 35%;
+	height: 32vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -237,13 +419,11 @@ body {
 }
 
 .rightclm-start {
-	width: 25%;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 2vw;
+	gap: 4vh;
 }
 
 .startbtn {
@@ -285,7 +465,10 @@ body {
 
 .oneround,
 .fiverounds,
-.tenrounds {
+.tenrounds,
+.easy,
+.medium,
+.hard {
 	cursor: pointer;
 }
 

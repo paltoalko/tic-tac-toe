@@ -12,109 +12,156 @@
 <body>
  <div class="main">
     <div class="gamescreen">
-        <div class="leftclm-game">
-
+        <div class="top-screen">
+            <h1>Tic-Tac-Toe</h1>
         </div>
 
-        <div class="middleclm-game">
-            <div class="gametitle"><h1>Tic-Tac-Toe</h1></div>
-            <div class="subtitle"></div>
-            <div class="selectedopt"></div>
-            <div class="gamegrid"></div>
-            <div class="gamedifficulty"></div>
-        </div>
+        <div class="middle-gamescreen">
 
-        <div class="rightclm-game">
-            <div class="gamestats"></div>
+            <div class="maingamescreen">
+                <div class="top-gamescreen">
+                    <div class="board" id="board">
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                    </div>
+
+                    <div class="statsclm">
+                        <div class="stats">
+                            <div class="roundcounter">Round 1</div>
+                            <div class="currentplayers">
+                                <div class="avatar"><i class="fas fa-user fa-3x"></i></div>
+                                <div class="smallvs">VS</div>
+                                <div class="avatar"><i class="fas fa-user fa-3x"></i></div>
+                            </div>
+                            <div class='scoretab'>
+                                <div class="playerscore">0</div>
+                                <div class="computerscore">0</div>
+                                <div class="playerone">Player</div>
+                                <div class="playertwo">Computer</div>
+                            </div>
+                            <div class="options">
+                                <div class="option">Options</div>
+                                <div class="restart">Restart</div>
+                                <div class="newgame">New Game</div>
+                            </div>
+                            <div class="bottom-gamescreen">
+                                <div class="gamediff">Difficulty</div>
+                                <div class="gamemodes">
+                                    <div class="easymode">Easy</div>
+                                    <div class="mediummode">Medium</div>
+                                    <div class="hardmode">Hard</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
         </div>
 
     </div>
     
     <div class="startscreen">
-        <div class="leftclm-start">
-            <div class="actiontitle"><p>CHOOSE TO START</p></div>
-        </div>
 
-        <div class="middleclm-start">
-            <div class="gametitle"><h1>Tic-Tac-Toe</h1></div>
-            <div class="optionone">
-                <div class="optionone-leftclm">
-                    <div class="playerright">
-                        <div class="avatar"><i class="fas fa-user fa-7x"></i></div>
-                            <div class="playerchoice">
-                                <div class="xchoice">X</i></div>
-                                <div class="ochoice">O</i></div>
-                            </div>
-                        <div class="playername"><p>PLAYER</p></div>
-                    </div>
+
+            <div class="top-screen">
+                <h1>Tic-Tac-Toe</h1>
+            </div>
+
+            <div class="bottom-startscreen">
+                <div class="leftclm-start">
+                    <div class="actiontitle"><p>CHOOSE TO START</p></div>
                 </div>
-                <div class="optionone-middleclm">
-                    <div class="vs"><p>VS</p></div>
-                </div>
-                <div class="optionone-rightclm">
-                    <div class="computerleft">
-                        <div class="avatar"><i class="fas fa-robot fa-7x"></i></div>
-                        <div class="player">
-                            <div class="computerchoice">
-                                <div class="xchoice">X</i></div>
-                                <div class="ochoice">O</i></div>
+                
+                <div class="middleclm-start">
+                    <div class="optionone">
+                        <div class="optionone-leftclm">
+                            <div class="playerright">
+                                <div class="avatar" ><i class="fas fa-user fa-7x"></i></div>
+                                    <div class="playerchoice">
+                                        <div class="xchoice">X</i></div>
+                                        <div class="ochoice">O</i></div>
+                                    </div>
+                                <div class="playername"><p>PLAYER</p></div>
                             </div>
                         </div>
-                        <div class="playername"><p>COMPUTER</p></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="optiontwo">
-                <div class="optionone-leftclm">
-                    <div class="player">
-                        <div class="avatar"><i class="fas fa-user fa-7x"></i></div>
-                        <div class="playeronechoice">
-                            <div class="xchoice">X</i></div>
-                            <div class="ochoice">O</i></div>
+                        <div class="optionone-middleclm">
+                            <div class="vs"><p>VS</p></div>
                         </div>
-                        <div class="playername"><p class="player">PLAYER ONE</p></div>
-                    </div>
-                </div>
-                <div class="optionone-middleclm">
-                    <div class="vs"><p>VS</p></div>
-                </div>
-                <div class="optionone-rightclm">
-                    <div class="player">
-                        <div class="player">
-                            <div class="avatar"><i class="fas fa-user-ninja fa-7x"></i></div>
-                            <div class="playertwochoice">
-                                <div class="xchoice">X</i></div>
-                                <div class="ochoice">O</i></div>
+                        <div class="optionone-rightclm">
+                            <div class="computerleft">
+                                <div class="avatar"><i class="fas fa-robot fa-7x"></i></div>
+                                <div class="player">
+                                    <div class="computerchoice">
+                                        <div class="xchoice">X</i></div>
+                                        <div class="ochoice">O</i></div>
+                                    </div>
+                                </div>
+                                <div class="playername"><p>COMPUTER</p></div>
                             </div>
-                            <div class="playername"><p class="player">PLAYER TWO</p></div>
                         </div>
+                    </div>
+                    
+                    <div class="optiontwo">
+                        <div class="optionone-leftclm">
+                            <div class="player">
+                                <div class="avatar"><i class="fas fa-user fa-7x"></i></div>
+                                <div class="playeronechoice">
+                                    <div class="xchoice">X</i></div>
+                                    <div class="ochoice">O</i></div>
+                                </div>
+                                <div class="playername"><p class="player">PLAYER ONE</p></div>
+                            </div>
+                        </div>
+                        <div class="optionone-middleclm">
+                            <div class="vs"><p>VS</p></div>
+                        </div>
+                        <div class="optionone-rightclm">
+                            <div class="player">
+                                <div class="player">
+                                    <div class="avatar"><i class="fas fa-user-ninja fa-7x"></i></div>
+                                    <div class="playertwochoice">
+                                        <div class="xchoice">X</i></div>
+                                        <div class="ochoice">O</i></div>
+                                    </div>
+                                    <div class="playername"><p class="player">PLAYER TWO</p></div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="rightclm-start">
+                    <div class="startbtn">
+                        <div class="playbtn">Start Game</div>
+                    </div>
+                    <div class="roundselector">
+        
+                        <div class="rounds"><p>Rounds</p></div>
+                        <div class="oneround"><p>1</p></div>
+                        <div class="fiverounds"><p>5</p></div>
+                        <div class="tenrounds"><p>10</p></div>
+        
+                    </div>
+                    
+                    <div class="diffselector">
+                        <div class="difficulty">Difficulty</div>
+                        <div class="easy">Easy</div>
+                        <div class="medium">Medium</div>
+                        <div class="hard">Hard</div>
+                    </div>
+        
                 </div>
             </div>
-            </div>
-        </div>
     
-        <div class="rightclm-start">
-            <div class="startbtn">
-                <div class="playbtn">Start Game</div>
-            </div>
-            <div class="roundselector">
-
-                <div class="rounds"><p>Rounds</p></div>
-                <div class="oneround"><p>1</p></div>
-                <div class="fiverounds"><p>5</p></div>
-                <div class="tenrounds"><p>10</p></div>
-
-            </div>
-            
-            <div class="diffselector">
-                <div class="difficulty">Difficulty</div>
-                <div class="easy">Easy</div>
-                <div class="medium">Medium</div>
-                <div class="hard">Hard</div>
-            </div>
-
-        </div>
     </div>
 
 
