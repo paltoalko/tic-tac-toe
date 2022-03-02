@@ -356,15 +356,8 @@ body {
 .ochoice {
 	font-size: 4.5vw;
 	color: var(--avatar);
-	transition: 0.4s;
-	cursor: pointer;
 }
 
-.xchoice:hover,
-.ochoice:hover {
-	color: var(--subtitle);
-}
-
-.selected {
+#selected {
 	color: var(--subtitle);
 }

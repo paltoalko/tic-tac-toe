@@ -36,13 +36,13 @@
                         <div class="stats">
                             <div class="roundcounter">Round 1</div>
                             <div class="currentplayers">
-                                <div class="avatar"><i class="fas fa-user fa-3x"></i></div>
+                                <div class="avatar"><i id="playerone"></i></div>
                                 <div class="smallvs">VS</div>
-                                <div class="avatar"><i class="fas fa-user fa-3x"></i></div>
+                                <div class="avatar"><i id="playertwo"></i></div>
                             </div>
                             <div class='scoretab'>
-                                <div class="playeronescore">0</div>
-                                <div class="playertwoscore">0</div>
+                                <div class="playeronescore"></div>
+                                <div class="playertwoscore"></div>
                                 <div class="playerone">Player 1</div>
                                 <div class="playertwo">Player 2</div>
                             </div>
@@ -66,14 +66,13 @@
                 <div class="playeroneopt">
                     <div class="name">Player One</div>
                     <div class="icons">
-                        <i class="fa-solid fa-user fa-3x"></i>
-                        <i class="fa-solid fa-user-astronaut fa-3x"></i>
-                        <i class="fa-solid fa-user-ninja fa-3x"></i>
-                        <i class="fa-solid fa-user-tie fa-3x"></i>
+                        <i id="oneuser" class="fa-solid fa-user fa-3x"></i>
+                        <i id="oneastronaut" class="fa-solid fa-user-astronaut fa-3x"></i>
+                        <i id="oneninja" class="fa-solid fa-user-ninja fa-3x"></i>
+                        <i id="onetie"  class="fa-solid fa-user-tie fa-3x"></i>
                     </div>
                     <div class="choice">
                         <div class="xchoice">X</div>
-                        <div class="ochoice">O</div>
                     </div>
                 </div>
 
@@ -83,14 +82,13 @@
                 <div class="playertwoopt">
                     <div class="name">Player Two</div>
                     <div class="icons">
-                        <i class="fa-solid fa-user fa-3x"></i>
-                        <i class="fa-solid fa-user-astronaut fa-3x"></i>
-                        <i class="fa-solid fa-user-ninja fa-3x"></i>
-                        <i class="fa-solid fa-user-tie fa-3x"></i>
+                        <i id="twouser" class="fa-solid fa-user fa-3x"></i>
+                        <i id="twoastronaut" class="fa-solid fa-user-astronaut fa-3x"></i>
+                        <i id="twoninja" class="fa-solid fa-user-ninja fa-3x"></i>
+                        <i id="twotie" class="fa-solid fa-user-tie fa-3x"></i>
                     </div>
                     <div class="choice">
-                        <div class="xchoice">X</div>
-                        <div class="ochoice">O</div>
+                        <div class="xchoice">O</div>
                     </div>
                 </div>
 
@@ -101,6 +99,7 @@
     </div>
  </div>
 
+ 
  <script src="script.js"></script>
 </body>
 </html>
